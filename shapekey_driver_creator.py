@@ -357,12 +357,13 @@ class ShapekeyDriverCreator(bpy.types.Operator):
         
         if len(curve.modifiers) > 0:
             curve.modifiers.remove(curve.modifiers[0])
-            curve.driver.type = "SUM"
-            curve_var.type = "TRANSFORMS"
-            curve_var.targets[0].id = bpy.context.active_object
-            curve_var.targets[0].bone_target = bpy.context.active_pose_bone.name
-            curve_var.targets[0].transform_space = self.space
-            curve_var.targets[0].transform_type = self.type
+            
+        curve.driver.type = "SUM"
+        curve_var.type = "TRANSFORMS"
+        curve_var.targets[0].id = bpy.context.active_object
+        curve_var.targets[0].bone_target = bpy.context.active_pose_bone.name
+        curve_var.targets[0].transform_space = self.space
+        curve_var.targets[0].transform_type = self.type
         
         if self.type in ["ROT_X","ROT_Y","ROT_Z"]:
             min_value = radians(self.min_value)
