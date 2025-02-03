@@ -1,12 +1,12 @@
 # Shapekey Driver Creator Addon
-This addon makes constraining shapekey driver to bones super easy.
+This addon makes adding a driver to a shape key with a bone controller super easy.
 
 # Usage
 - Install the addon in the user preferences.
 - Select the meshobject, than select a bone in posemode
 - The addon can be found under the Pose menu, the Pose Context Mneu (W-key), or the F3 Operator search - Shapekey Driver Creator
 - Set the all values and apply
-- Thats it, your property now can be driven by the bone
+- Thats it, your shape key now can be driven by the bone
 
 ### This code was forked from - https://github.com/ndee85/Driver-Constraint-Addon 
 - Changed the name to 'Shapekey Driver Creator' to avoid any confusion to blender's constraints.
